@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="script.js"></script>
+  <title>Assignment 5 - CSCI 355</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <!--start of courses-->
+  <div class="dropdown">
+    <button class="dropbtn">
+        <a href="#"> <!-- Wrap the text in an <a> tag -->
+          <span>Course</span> <!-- Wrap the text in a <span> tag -->
+          <i class="fa fa-caret-down"></i>
+        </a>
+      </button>
+    <div class="dropdown-content">
+      <a href="https://gaia.cs.umass.edu/kurose_ross/lectures.php" target="_blank">Kurose and Ross Textbook</a>
+      <a href="https://www.w3schools.com/howto/default.asp" target="_blank">w3schools</a>
+      <a href="https://www.geeksforgeeks.org/" target="_blank">geeksforgeeks</a>
+    </div>
+  </div> 
+  <!--end of courses-->
+  <!--Dropdown content for BROWSER-->
+  <div class="dropdown">
+    <button class="dropbtn">
+        <a href="#browser"> <!-- Wrap the text in an <a> tag -->
+          <span>Browser</span> <!-- Wrap the text in a <span> tag -->
+          <i class="fa fa-caret-down"></i>
+        </a>
+      </button>
+    <div class="dropdown-content">
+      <a href="#navigator">Navigator</a>
+      <a href="#Window">Window</a>
+      <a href="#Screen">Screen</a>
+      <a href="#Location">Location</a>
+      <a href="#Geolocation">Geolocation</a>
+    </div>
+  </div> 
+  <!--End of BROWSER-->
+  <!--Start for ABOUT-->
+  <div class="dropdown">
+    <button class="dropbtn">
+        <a href="#about"> <!-- Wrap the text in an <a> tag -->
+          <span>About</span> <!-- Wrap the text in a <span> tag -->
+          <i class="fa fa-caret-down"></i>
+        </a>
+    </button>
+    <div class="dropdown-content">
+      <a href="#aboutMe">Description</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </div> 
+  <!--End for ABOUT-->
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<div class="header">
+    <h1>Assignment 5</h1>
+    <p>Check out the Browser and About section</p>
+</div>
+
+<section>
+<div style="padding-left:16px">
+    <h2 id="browser" class="title-center">Browser Details</h2>
+    <h3 id="navigator">The Navigator Object</h3>
+    <p id="navName"></p>
+    <p id="navProduct"></p>
+    <p id="navVersion"></p>
+    <p id="navAgent"></p>
+    <p id="navPlatform"></p>
+    <p id="navLanguage"></p>
+
+    <h3 id="Window">JavaScript Window</h3>
+    <p id="window"></p>
+
+    <h3 id="Screen">Screen</h3>
+    <p id="screenWidth"></p>
+    <p id="screenHeight"></p>
+    <p id="availWidth"></p>
+    <p id="availHeight"></p>
+    <p id="colorDepth"></p>
+    <p id="pixelDepth"></p>
+
+    <h3 id="Location">The window.location object</h3>
+    <p id="href"></p>
+    <p id="hostname"></p>
+    <p id="pathname"></p>
+    <p id="protocol"></p>
+
+    <h2 id="Geolocation">Geolocation</h2>
+    <p id="geo"></p>
+
+
+</div>
+</section>
+
+<br>
+
+<section>
+    <div style="padding-left:16px" class="header2" id="about">
+      <h2 class="title-center" id="aboutMe">About Me</h2>
+      <img src="imgs/profile.jpg" alt="Profile Image" class="profile-img">
+      <p class="title-center">Hello! My name is Damaris Campos, I am a senior majoring in Computer Science at QC</p>
+      <p class="title-center">I became interested in technology after taking a robotics course in the summer at QCC</p>
+</div>
+<br>
+<div style="padding-left:16px" class="header">
+    <h2 class="title-center" id="contact">Contact Me:</h2>
+
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name"><br>
+    E-mail:<br>
+    <input type="text" name="mail"><br>
+    Comment:<br>
+    <input type="text" name="comment" size="50"><br><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+    </form>
+</div>
+</section>
+
+
+
+</body>
+</html>
